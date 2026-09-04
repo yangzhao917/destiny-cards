@@ -40829,6 +40829,12 @@ function print() { __p += __j.call(arguments, '') }
         "div",
         { class: "texts fade" },
         [
+          createBaseVNode("div", { class: "destiny-title" }, [
+            createBaseVNode("img", {
+              src: "/assets/destiny-title-original.png",
+              alt: "天命牌",
+            }),
+          ]),
           createBaseVNode(
             "p",
             { class: "text-center intro" },
