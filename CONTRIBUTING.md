@@ -9,7 +9,7 @@
 ```bash
 # Fork 项目到您的 GitHub 账户
 # 然后克隆您的 fork
-git clone git@github.com:yangzhao917/destiny-cards.git
+git clone <your-fork-url>
 cd destiny-cards
 ```
 

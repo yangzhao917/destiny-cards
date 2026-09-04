@@ -56,7 +56,7 @@ web4/
 
 1. **克隆项目**
    ```bash
-   git clone git@github.com:yangzhao917/destiny-cards.git
+   git clone <repository-url>
    cd destiny-cards
    ```
 
@@ -164,7 +164,7 @@ web4/
 1. **Fork 项目**
    ```bash
    # 点击 GitHub 上的 Fork 按钮，然后克隆你的 fork
-   git clone git@github.com:yangzhao917/destiny-cards.git
+   git clone <your-fork-url>
    cd destiny-cards
    ```
 
@@ -244,27 +244,13 @@ SOFTWARE.
 
 如果您发现了 bug 或有功能建议，请：
 
-1. 查看 [Issues](https://github.com/yangzhao917/destiny-cards/issues) 确认问题未被报告
+1. 查看项目 Issues 确认问题未被报告
 2. 创建新的 Issue，详细描述问题
 3. 提供复现步骤和环境信息
-
-## 📞 联系方式
-
-- **GitHub Issues**: [项目 Issues](https://github.com/yangzhao917/destiny-cards/issues)
-- **讨论区**: [GitHub Discussions](https://github.com/yangzhao917/destiny-cards/discussions)
-- **邮箱**: 项目维护者邮箱
 
 ## 🙏 致谢
 
 感谢所有为这个项目做出贡献的开发者和设计师！
-
-### 贡献者
-
-<!-- 这里会自动显示贡献者列表 -->
-
-<a href="https://github.com/yangzhao917/destiny-cards/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=yangzhao917/destiny-cards" />
-</a>
 
 ---
 

@@ -40838,7 +40838,7 @@ function print() { __p += __j.call(arguments, '') }
             createBaseVNode(
               "b",
               null,
-              "本游戏由武昌工学院-YL科研团队开发-击败我们！"
+              "准备好接受天命的挑战了吗？"
             ),
           ]),
         ],
@@ -41282,8 +41282,8 @@ function print() { __p += __j.call(arguments, '') }
       },
     },
     _hoisted_1$j = { class: "credits text-center" },
-    _hoisted_2$g = createTextVNode("关于我们"),
-    _hoisted_3$g = createTextVNode("加入YL科研团队");
+    _hoisted_2$g = createTextVNode("天命牌"),
+    _hoisted_3$g = createTextVNode("天命牌");
   function _sfc_render$d(n, e, t, i, r, a) {
     const s = resolveComponent("ButtonElement");
     return (
@@ -67870,16 +67870,16 @@ void main() {
         },
         twitterLink() {
           const n = `${this.shareText} ${this.url}`;
-          return `https://x.com/intent/post?text=%40lvwujiao`;
+          return `https://x.com/intent/post?text=${encodeURIComponent(n)}`;
         },
         facebookLink() {
-          return `https://www.facebook.com/share/p/1ANAxMgYbp/`;
+          return `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(this.url)}`;
         },
         linkedinLink() {
-          return `mailto:1877634492@qq.com`;
+          return `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(this.url)}`;
         },
         url() {
-          return 'https://www.facebook.com/share/p/1ANAxMgYbp/';
+          return window.location.href;
         },
       }),
       mounted() {
@@ -68202,11 +68202,7 @@ void main() {
     _hoisted_2$8 = { class: "container-scroll wrapper fade" },
     _hoisted_3$9 = createTextVNode("返回"),
     _hoisted_4$7 = createStaticVNode(
-      '<div class="texts" data-v-3c6ce824><div class="featuring" data-v-3c6ce824><a href="https://www.yalipear.cn" target="_blank" data-v-3c6ce824><img src="' +
-        _imports_0$3 +
-        '" class="logo-lm-feat" alt="Lost Mechanics" data-v-3c6ce824></a><span class="cross" data-v-3c6ce824></span><a href="https://www.yalipear.cn/" target="_blank" class="toma" data-v-3c6ce824><img src="' +
-        _imports_1$2 +
-        '" class="logo-lm-feat" alt="Lost Mechanics" data-v-3c6ce824> YL科研团队</a></div><p class="text-center text-bold" data-v-3c6ce824><b data-v-3c6ce824>请你分享本游戏如果游戏比较火爆我们将推出实体卡牌游戏</b></p><p class="text-center" data-v-3c6ce824>->点击下面命卡可详细查看<-</p></div>',
+      '<div class="texts" data-v-3c6ce824><p class="text-center text-bold" data-v-3c6ce824><b data-v-3c6ce824>请你分享本游戏如果游戏比较火爆我们将推出实体卡牌游戏</b></p><p class="text-center" data-v-3c6ce824>->点击下面命卡可详细查看<-</p></div>',
       1
     ),
     _hoisted_5$5 = createTextVNode("->获得命牌<-"),
@@ -68329,7 +68325,7 @@ void main() {
     _hoisted_3$8 = createStaticVNode(
       '<img src="' +
         _imports_0$2 +
-        '" class="warning" data-v-23d257be><div class="line-container" data-v-23d257be><div class="line-text" data-v-23d257be>DATA C // DISK_BATTLE.YEAR </div></div><div class="line-container" data-v-23d257be><div class="line-text" data-v-23d257be>MISSION-ENCRYPTED:// _B\u20AC4T_LOST-MECH4N1CS</div></div><div class="line-container" data-v-23d257be><div class="line-text" data-v-23d257be>SESSION_HAPPY#NEW\xB0 _YEAR</div></div><div class="line-container" data-v-23d257be><div class="line-text" data-v-23d257be>LOADING SYSTEM...WAITING FOR USER ACTION</div></div>',
+        '" class="warning" data-v-23d257be><div class="line-container" data-v-23d257be><div class="line-text" data-v-23d257be>DESTINY CARDS // BATTLE MODE</div></div><div class="line-container" data-v-23d257be><div class="line-text" data-v-23d257be>MISSION:// CHALLENGE DESTINY</div></div><div class="line-container" data-v-23d257be><div class="line-text" data-v-23d257be>SESSION:// CARD DUEL</div></div><div class="line-container" data-v-23d257be><div class="line-text" data-v-23d257be>LOADING GAME...WAITING FOR PLAYER</div></div>',
       5
     ),
     _hoisted_8$3 = [_hoisted_3$8],
@@ -68711,7 +68707,7 @@ void main() {
     _hoisted_2$4 = { class: "form-inputs" },
     _hoisted_3$4 = { class: "checkboxes" },
     _hoisted_4$4 = createTextVNode(
-      "I consent to Lost Mechanics collecting my data and contacting me when the card game is released. See the "
+      "I consent to the Destiny Cards project collecting my data. See the "
     ),
     _hoisted_5$3 = { key: 0, class: "form-error global" },
     _hoisted_6$3 = { class: "submit-container" },
@@ -68887,56 +68883,50 @@ void main() {
       pushScopeId("data-v-4ad1cece"), (n = n()), popScopeId(), n
     ),
     _hoisted_1$5 = _withScopeId$3(() =>
-      createBaseVNode("h3", { class: "small-title" }, "关于我们", -1)
+      createBaseVNode("h3", { class: "small-title" }, "天命牌", -1)
     ),
     _hoisted_2$3 = _withScopeId$3(() =>
       createBaseVNode(
         "p",
         { class: "subtitle" },
         [
-          createTextVNode("本游戏开发团队- "),
-          createBaseVNode(
-            "a",
-            { href: "https://www.yalipear.cn", target: "_blank" },
-            "YL科研团队"
-          ),
+          createTextVNode("天命牌项目"),
         ],
         -1
       )
     ),
     _hoisted_3$3 = _withScopeId$3(() =>
-      createBaseVNode("h4", { class: "border-title" }, "YL科研团队", -1)
+      createBaseVNode("h4", { class: "border-title" }, "项目介绍", -1)
     ),
     _hoisted_4$3 = _withScopeId$3(() =>
       createBaseVNode(
         "p",
         null,
-        "团队都是由开发人员、设计师、工程师和架构师组成。我们的方向很广，涉及物理数学和计算机科学，我们的目标是通过跨学科的合作和技术创新，推动社会进步和人类福祉！",
+        "这是一个互动卡牌游戏项目，欢迎通过项目仓库参与改进。",
         -1
       )
     ),
     _hoisted_5$2 = _withScopeId$3(() =>
-      createBaseVNode("h4", { class: "border-title" }, "团队队长", -1)
+      createBaseVNode("h4", { class: "border-title" }, "贡献方式", -1)
     ),
     _hoisted_6$2 = _withScopeId$3(() =>
-      createBaseVNode("p", null, "武昌工学院-吕小龙", -1)
+      createBaseVNode("p", null, "请使用项目仓库的 Issue 和 Pull Request。", -1)
     ),
     _hoisted_7$1 = _withScopeId$3(() =>
-      createBaseVNode("h4", { class: "border-title" }, "联系微信", -1)
+      createBaseVNode("h4", { class: "border-title" }, "隐私说明", -1)
     ),
     _hoisted_8$1 = _withScopeId$3(() =>
-      createBaseVNode("p", null, "Lv64255", -1)
+      createBaseVNode("p", null, "此公开构建不包含个人联系方式。", -1)
     ),
     _hoisted_9$1 = _withScopeId$3(() =>
-      createBaseVNode("h4", { class: "border-title" }, "联系QQ", -1)
+      createBaseVNode("h4", { class: "border-title" }, "联系渠道", -1)
     ),
     _hoisted_10$1 = _withScopeId$3(() =>
       createBaseVNode(
         "p",
         null,
         [
-          createTextVNode("QQ号:"),
-          createBaseVNode("em", null, '"1877634492"'),
+          createTextVNode("项目仓库 Issue"),
         ],
         -1
       )
@@ -69007,7 +68997,7 @@ void main() {
         "p",
         null,
         [
-          createTextVNode('This privacy notice for Lost Mechanics ("'),
+          createTextVNode('This privacy notice for Destiny Cards ("'),
           createBaseVNode("strong", null, "Company"),
           createTextVNode('", "'),
           createBaseVNode("strong", null, "we"),
@@ -69034,7 +69024,7 @@ void main() {
           createBaseVNode(
             "li",
             null,
-            "Visit our website at outofdoors.lostmechanics.com"
+            "Visit the Destiny Cards project page"
           ),
           createBaseVNode(
             "li",
@@ -69052,7 +69042,7 @@ void main() {
         [
           createBaseVNode("strong", null, "Questions or concerns?"),
           createTextVNode(
-            " Reading this privacy notice will help you understand your privacy rights and choices. If you do not agree with our policies and practices, please do not use our Services. If you still have any questions or concerns, please contact us at info@lostmechanics.com ."
+            " Reading this privacy notice will help you understand your privacy rights and choices. If you have questions or concerns, contact the project operator through the repository issue tracker."
           ),
         ],
         -1
@@ -69096,7 +69086,7 @@ void main() {
             "What personal information do we process?"
           ),
           createTextVNode(
-            " When you visit, use, or navigate our Services, we may process personal information depending on how you interact with Lost Mechanics and the Services, the choices you make, and the products and features you use. Click "
+            " When you visit, use, or navigate our Services, we may process personal information depending on how you interact with Destiny Cards and the Services, the choices you make, and the products and features you use. Click "
           ),
           createBaseVNode("a", { href: "#personalinfo" }, "here"),
           createTextVNode(" to learn more."),
@@ -69238,7 +69228,7 @@ void main() {
         null,
         [
           createTextVNode(
-            "Want to learn more about what Lost Mechanics does with any information we collect? Click "
+            "Want to learn more about what Destiny Cards does with any information we collect? Click "
           ),
           createBaseVNode("a", { href: "#toc" }, "here"),
           createTextVNode(" to review the notice in full."),
@@ -69705,7 +69695,7 @@ void main() {
       createBaseVNode(
         "p",
         null,
-        "We do not knowingly solicit data from or market to children under 18 years of age. By using the Services, you represent that you are at least 18 or that you are the parent or guardian of such a minor and consent to such minor dependent's use of the Services. If we learn that personal information from users less than 18 years of age has been collected, we will deactivate the account and take reasonable measures to promptly delete such data from our records. If you become aware of any data we may have collected from children under age 18, please contact us at info@lostmechanics.com .",
+        "We do not knowingly solicit data from or market to children under 18 years of age. By using the Services, you represent that you are at least 18 or that you are the parent or guardian of such a minor and consent to such minor dependent's use of the Services. If you become aware of data that may have been collected from children under age 18, contact the project operator through the repository issue tracker.",
         -1
       )
     ),
@@ -69892,7 +69882,7 @@ void main() {
       createBaseVNode(
         "p",
         null,
-        "If you have questions or comments about your privacy rights, you may email us at info@lostmechanics.com .",
+        "If you have questions or comments about your privacy rights, contact the project operator through the repository issue tracker.",
         -1
       )
     ),
@@ -69990,7 +69980,7 @@ void main() {
       createBaseVNode(
         "p",
         null,
-        "If you have questions or comments about this notice, you may contact our Data Protection Officer (DP, Petremann Nicolas , by email at info@lostmechanics.com , or by post to:",
+        "If you have questions or comments about this notice, please contact the project operator through the repository's issue tracker.",
         -1
       )
     ),
@@ -69999,15 +69989,7 @@ void main() {
         "p",
         null,
         [
-          createTextVNode("Lost Mechanics"),
-          createBaseVNode("br"),
-          createTextVNode(" Petremann Nicolas"),
-          createBaseVNode("br"),
-          createTextVNode(" 18 rue Bahutiers"),
-          createBaseVNode("br"),
-          createTextVNode(" Bordeaux 33000"),
-          createBaseVNode("br"),
-          createTextVNode(" France"),
+          createTextVNode("Contact details are intentionally not embedded in this public build."),
         ],
         -1
       )
@@ -70018,14 +70000,9 @@ void main() {
         null,
         [
           createTextVNode(
-            'If you are a resident in the European Economic Area, the "data controller" of your personal information is Lost Mechanics. Lost Mechanics has appointed Petremann Nicolas to be its representative in the EEA. You can contact them directly regarding the processing of your information by Lost Mechanics, by email at info@lostmechanics.com, by visiting '
+            'For privacy requests, contact the project operator through the repository issue tracker. '
           ),
-          createBaseVNode(
-            "a",
-            { target: "_blank", href: "https://lostmechanics.com" },
-            "https://lostmechanics.com"
-          ),
-          createTextVNode(" or by post to:"),
+          createTextVNode("Use the repository issue tracker for privacy requests."),
         ],
         -1
       )
@@ -70035,9 +70012,7 @@ void main() {
         "p",
         null,
         [
-          createTextVNode("18 rue des Bahutiers"),
-          createBaseVNode("br"),
-          createTextVNode(" Bordeaux 33000"),
+          createTextVNode("No personal postal address is embedded in this public build."),
         ],
         -1
       )
@@ -70220,7 +70195,7 @@ void main() {
       createBaseVNode(
         "p",
         { class: "subtitle" },
-        "加入YL科研团队",
+        "天命牌",
         -1
       )
     ),
@@ -70229,22 +70204,22 @@ void main() {
         "p",
         { class: "small-title" },
         [
-          createTextVNode("YaliPear(YL)是武昌工学院一信息工程学院的一名优秀学生所创建的团队"),
+          createTextVNode("欢迎通过项目仓库参与改进。"),
           createBaseVNode("span", { class: "border-block" }, [
             createBaseVNode(
               "a",
-              { href: "mailto:1877634492@qq.com", target: "_blank" },
+              { href: "#", target: "_self" },
               "点击"
             ),
             createTextVNode("联系"),
             createBaseVNode(
               "a",
               {
-                href: "mailto:1877634492@qq.com",
-                target: "_blank",
+                href: "#",
+                target: "_self",
                 class: "toma",
               },
-              "队长"
+              "项目"
             ),
           ]),
           createTextVNode(
@@ -71006,10 +70981,6 @@ void main() {
       pushScopeId("data-v-b52233d6"), (n = n()), popScopeId(), n
     ),
     _hoisted_1 = { class: "page" },
-    _hoisted_2 = _withScopeId(() =>
-      createBaseVNode("img", { src: _imports_0 }, null, -1)
-    ),
-    _hoisted_3 = [_hoisted_2],
     _hoisted_4 = createTextVNode("跳过");
   function _sfc_render(n, e, t, i, r, a) {
     const s = resolveComponent("Scene3D"),
@@ -71036,19 +71007,6 @@ void main() {
         [
           createVNode(s),
           createBaseVNode("div", _hoisted_1, [
-            createBaseVNode(
-              "button",
-              {
-                class: normalizeClass([
-                  "logo-lm",
-                  { "logo-lm-small": r.step !== r.HOME_STEP },
-                ]),
-                onClick:
-                  e[0] || (e[0] = (...I) => a.goBackHome && a.goBackHome(...I)),
-              },
-              _hoisted_3,
-              2
-            ),
             createVNode(
               o,
               {
@@ -71163,10 +71121,6 @@ void main() {
               8,
               ["onEnter", "onLeave"]
             ),
-            r.step !== r.CARD_GAME_STEP && r.step !== r.SHOW_ALL_CARDS_STEP
-              ? (openBlock(),
-                createBlock(x, { key: 0, class: "credit-container" }))
-              : createCommentVNode("", !0),
             a.isTuto
               ? (openBlock(),
                 createBlock(
@@ -71182,9 +71136,6 @@ void main() {
                   ["onClick"]
                 ))
               : createCommentVNode("", !0),
-            createVNode(M, { ref: "creditsModal" }, null, 512),
-            createVNode(C, { ref: "privacyModal" }, null, 512),
-            createVNode(P, { ref: "presaveModal" }, null, 512),
           ]),
         ],
         64
@@ -72164,9 +72115,8 @@ void main() {
   })();
   hawk.crypto.utils = CryptoJS;
   typeof module != "undefined" && module.exports && (module.exports = hawk);
-  const ENSO_CLIENT_KEY = "d0fd5bf513a9138b43d5",
-    ENSO_CLIENT_SECRET =
-      "3014a8ad4e7651e3438c6e1f248e7266357bd0cd86672cb9ec26ce15321f2a3954b19c430deeafb9",
+  const ENSO_CLIENT_KEY = "",
+    ENSO_CLIENT_SECRET = "",
     ENSO_PROJECT_SLUG = "lm_cartedevoeux",
     ENSO_ALGO = {}.VITE_ENSO_ALGO || "sha256",
     ENSO_ENTRY = "https://production.enso.lostmechanics.cool/api/",
@@ -72591,7 +72541,7 @@ void main() {
       ambianceBreak: { src: "ambiance-break.mp3", volume: 0.75, preload: !0 },
     },
     config = { globalVolume: 0.8 },
-    ANALYTICS_URL = "https://www.yalipear.cn/nv-admin/login";
+    ANALYTICS_URL = "";
   class Analytics {
     constructor(e) {
       if (
@@ -72644,9 +72594,11 @@ void main() {
   };
   app.config.globalProperties.$isMobile = isMobile();
   app.config.globalProperties.$isSafari = isSafari();
-  app.config.globalProperties.$enso = new Enso(app);
-  app.config.globalProperties.$analytics = new Analytics("16");
-  app.config.globalProperties.$analytics.trackPageView();
+  app.config.globalProperties.$enso = {};
+  app.config.globalProperties.$analytics = {
+    trackPageView() {},
+    trackEvent() {},
+  };
   app.config.globalProperties.$breakpoints = breakpoints();
   const soundMap = {},
     initSound = (n) => {
